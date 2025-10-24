@@ -3,8 +3,6 @@
 A modern, responsive, and accessible website for **Ather Initiative**, built concerning performance, maintainability, and user experience.  
 This project serves as the **official digital front** of the organization — presenting its mission and social impact engagingly and professionally.
 
-![Ather Initiative Logo](public/screenshot.png)
-
 ---
 
 ## Overview
