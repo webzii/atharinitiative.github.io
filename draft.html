@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athar - Volunteer Organization</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-spacer"></div>
+                    <img class="logo-img" src="https://placehold.co/52x51" alt="Athar Logo">
+                    <div class="logo-text">
+                        <div class="logo-title">Athar</div>
+                    </div>
+                </div>
+                <nav class="navigation">
+                    <div class="nav-item" data-hover="false" data-variant="1">
+                        <div class="nav-text">Volunteers Life</div>
+                    </div>
+                    <div class="nav-item-spacer">
+                        <div class="nav-item" data-hover="false" data-variant="1">
+                            <div class="nav-text">Application</div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="theme-toggle">
+                    <div class="toggle-switch">
+                        <div class="toggle-knob"></div>
+                    </div>
+                    <div class="toggle-text">
+                        <div class="toggle-label">Dark Mode</div>
+                    </div>
+                </div>
+                <div class="cta-button" data-hover="false" data-variant="1">
+                    <div class="button-text">Join Now</div>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-background">
+                <div class="bg-element" data-variant="1">
+                    <div class="bg-dot"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-title-section">
+                    <div class="hero-title">Why should you join athar</div>
+                </div>
+                <div class="hero-spacer"></div>
+            </div>
+        </section>
+
+        <section class="application-section">
+            <div class="application-header">
+                <div class="application-title-section">
+                    <div class="application-title">Application</div>
+                </div>
+                <div class="title-underline"></div>
+            </div>
+            <div class="application-button form-button">
+                <div class="button-background"></div>
+                <div class="button-text">To The Application Form</div>
+            </div>
+            <div class="application-button handout-button">
+                <div class="button-background"></div>
+                <div class="button-text">Handout</div>
+            </div>
+            <div class="application-note">
+                It's Recommended to take a look at the Committees section in the Handbook to choose The Committee that suits you the best
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-info">
+                        <div class="footer-logo">
+                            <img class="footer-logo-img" src="https://placehold.co/52x40" alt="Athar Logo">
+                            <div class="footer-logo-text">
+                                <div class="footer-logo-title">Athar</div>
+                            </div>
+                        </div>
+                        <div class="footer-tagline">
+                            <div class="tagline-text">Empowering youth through volunteerism</div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <div class="social-icon" data-hover="false" data-variant="1">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="social-icon" data-hover="false" data-variant="1">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="social-icon" data-hover="false" data-variant="1">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="social-icon" data-hover="false" data-variant="1">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <div class="copyright-text">© 2023 Athar Charity Organization. All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+<style>
+    /* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #010C13;
+    color: #D4EDFC;
+}
+
+.container {
+    width: 1920px;
+    background: #010C13;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+}
+
+/* Header Styles */
+.header {
+    align-self: stretch;
+    padding-left: 192px;
+    padding-right: 192px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: rgba(212, 237, 252, 0);
+    box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1536px;
+    padding-right: 0.02px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+}
+
+.logo-section {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.logo-spacer {
+    width: 60px;
+    height: 48px;
+    padding-right: 12px;
+}
+
+.logo-img {
+    width: 52px;
+    height: 51px;
+}
+
+.logo-text {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+.logo-title {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #D4EDFC;
+    font-size: 30px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 36px;
+    word-wrap: break-word;
+}
+
+.navigation {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.nav-item {
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+.nav-text {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #D4EDFC;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.nav-item-spacer {
+    align-self: stretch;
+    padding-left: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+.theme-toggle {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.toggle-switch {
+    width: 56px;
+    height: 28px;
+    padding: 4px;
+    transform: rotate(180deg);
+    transform-origin: top left;
+    background: #D4EDFC;
+    border-radius: 9999px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.toggle-knob {
+    width: 20px;
+    height: 20px;
+    background: #010C13;
+    border-radius: 9999px;
+}
+
+.toggle-text {
+    padding-left: 8px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+.toggle-label {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #D4EDFC;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.cta-button {
+    padding-top: 13.50px;
+    padding-bottom: 14.50px;
+    padding-left: 32px;
+    padding-right: 32px;
+    left: 1241.50px;
+    top: 1.50px;
+    position: absolute;
+    background: #7ECAF6;
+    border-radius: 9999px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.button-text {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #010C13;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+/* Hero Section */
+.hero {
+    align-self: stretch;
+    height: 904px;
+    position: relative;
+}
+
+.hero-background {
+    width: 1920px;
+    height: 424px;
+    padding-bottom: 364px;
+    padding-right: 1860px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+.bg-element {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-dot {
+    width: 4px;
+    height: 4px;
+    left: 28px;
+    top: 28px;
+    position: absolute;
+    background: rgba(0, 132, 61, 0.10);
+}
+
+.hero-content {
+    width: 1536px;
+    max-width: 1536px;
+    padding-left: 16px;
+    padding-right: 16px;
+    left: 192px;
+    top: 96px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    display: inline-flex;
+}
+
+.hero-title-section {
+    align-self: stretch;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    display: flex;
+}
+
+.hero-title {
+    align-self: stretch;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #D4EDFC;
+    font-size: 60px;
+    font-family: Bebas Neue;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 3px;
+    word-wrap: break-word;
+}
+
+.hero-spacer {
+    width: 768px;
+    height: 224px;
+    max-width: 768px;
+}
+
+/* Application Section */
+.application-section {
+    width: 896px;
+    height: 588px;
+    max-width: 896px;
+    position: relative;
+}
+
+.application-header {
+    width: 896px;
+    left: 0px;
+    top: 64px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    display: inline-flex;
+}
+
+.application-title-section {
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.application-title {
+    align-self: stretch;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #D4EDFC;
+    font-size: 36px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 40px;
+    word-wrap: break-word;
+}
+
+.title-underline {
+    width: 80px;
+    height: 4px;
+    background: #7ECAF6;
+}
+
+.application-button {
+    width: 347px;
+    height: 130px;
+    position: absolute;
+}
+
+.form-button {
+    left: 0px;
+    top: 188px;
+}
+
+.handout-button {
+    left: 0px;
+    top: 382px;
+}
+
+.button-background {
+    width: 347px;
+    height: 130px;
+    position: absolute;
+    background: #7ECAF6;
+    border-radius: 100px;
+    align-items: center;
+}
+
+.application-note {
+    width: 497px;
+    height: 82px;
+    left: 355px;
+    top: 420px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #D4EDFC;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 40px;
+    word-wrap: break-word;
+}
+
+/* Footer */
+.footer {
+    align-self: stretch;
+    padding-left: 384px;
+    padding-right: 384px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #111827;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1152px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    display: flex;
+}
+
+.footer-top {
+    align-self: stretch;
+    height: 104px;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+}
+
+.footer-info {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: inline-flex;
+}
+
+.footer-logo {
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+}
+
+.footer-logo-img {
+    width: 52px;
+    height: 40px;
+    padding-right: 12px;
+}
+
+.footer-logo-text {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+.footer-logo-title {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #D4EDFC;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+
+.footer-tagline {
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.tagline-text {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #9CA3AF;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.social-links {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.social-icon {
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+.social-icon i {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #9CA3AF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.social-icon:not(:first-child) {
+    padding-left: 24px;
+}
+
+.footer-bottom {
+    align-self: stretch;
+    padding-top: 33px;
+    border-top: 1px #1F2937 solid;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.copyright {
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.copyright-text {
+    align-self: stretch;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #6B7280;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+</style>

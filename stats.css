@@ -1,0 +1,144 @@
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+
+.stat-card {
+    background: #111827;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    min-height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: 0.2s;
+}
+
+.stat-card:hover {
+    transform: scale(1.0625);
+    background-color: #2a3140;
+}
+
+.stat-text {
+    color: #D4EDFC;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1.2px;
+    text-align: left;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.stat-image {
+    width: 120px;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+/* Placeholder if image is missing */
+.stat-card:not(:has(img))::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 100px;
+    background-color: #1f2937;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stat-text {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .stat-image {
+        margin: 10px auto 0;
+    }
+
+    .stat-card:not(:has(img))::after {
+        margin: 10px auto 0;
+    }
+}
+
+                                                    /* Light mode */
+
+body.light-mode .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+
+body.light-mode .stat-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    min-height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: 0.2s;
+}
+
+body.light-mode .stat-card:hover {
+    transform: scale(1.0625);
+    background-color: #e6e6e6;
+}
+
+body.light-mode .stat-text {
+    color: #031C2B;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1.2px;
+    text-align: left;
+    flex: 1;
+    padding-right: 10px;
+}
+
+body.light-mode .stat-image {
+    width: 120px;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+/* Placeholder if image is missing */
+body.light-mode .stat-card:not(:has(img))::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 100px;
+    background-color: #1f2937;
+    border-radius: 8px;
+    margin-left: 10px;
+}

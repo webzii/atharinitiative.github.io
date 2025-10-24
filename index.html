@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ather Initiative - Empowering Youth Through Volunteering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo-a"><div class="logo" >
+                    <img src="public/margin.png"  alt="Ather Logo" class="logo-img">
+                    <div class="logo-text">Ather Initiative</div>
+                </div></a>
+
+                <nav>
+                    <a href="committees.html" class="nav-link">Committees</a>
+                    <div class="dropdown">
+                        <a class="nav-link dropbtn" onclick="drop()">Clubs</a>
+                        <div id="dropdown" class="dropdowncontent">
+                            <br><a href="oct11.html" class="nav-link">11th District, 6th of October STEM</a><br><br>
+                            <a href="fayoum.html" class="nav-link">Fayoum STEM</a><br><br>
+                            <a href="obour.html" class="nav-link">Obour STEM</a><br><br>
+                        </div>
+                    </div>
+                    <a href="join.html" class="nav-link">Join Ather Initiative</a>
+                    <a href="stats.html" class="nav-link">Ather Stats</a>
+                </nav>
+
+                <div class="dark-mode-toggle">
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>Light Mode</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">EMPOWERING YOUTH THROUGH VOLUNTEERING</h1>
+                <p class="hero-subtitle">Join Ather in creating positive change in communities through student-led volunteer initiatives.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="window.location.href='join.html'">Join Ather Initiative</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-content">
+            <div class="section-header">
+                <h1 class="section-title">About Ather</h1>
+                <div class="divider"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="text-group">
+                        <h2 class="text-title">Our Mission</h2>
+                        <p class="text-content">
+                            Ather is a charitable initiative whose mission is to promote the concept of volunteerism, 
+                            emphasizing its importance in numerous ways benefiting individuals and communities.
+                        </p>
+                        <p class="text-content">
+                            The Initiative focuses on encouraging student engagement in schools.
+                        </p>
+                    </div>
+
+                    <div class="text-group">
+                        <h2 class="text-title">Our Vision</h2>
+                        <p class="text-content">
+                            Many people have a desire to do good, but they often need encouragement and constant reminders. 
+                            For this reason, we have decided to share the idea of volunteering through "Ather Clubs" that 
+                            can be set up in many schools and universities.
+                        </p>
+                        <p class="text-content">
+                            Each club will be responsible for the community it serves, identifying its issues and the needs 
+                            of its residents, and continually seeking ways to help and support others.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="stats-card">
+                    <div class="founded">
+                        <div class="founded-icon">
+                            <span>📅</span>
+                        </div>
+                        <div class="founded-text">
+                            <h3 class="founded-title">Founded</h3>
+                            <div class="founded-year">2023</div>
+                        </div>
+                    </div>
+
+                    <div class="stats-list">
+                        <div class="stat-item">
+                            <div class="stat-icon">🎓</div>
+                            <div class="stat-text">
+                                <h3 class="stat-title">School Clubs</h3>
+                                <p class="stat-desc">Active clubs in STEM and Traditional schools across Greater Cairo and Egypt</p>
+                            </div>
+                        </div>
+
+                        <div class="stat-item">
+                            <div class="stat-icon">👥</div>
+                            <div class="stat-text">
+                                <h3 class="stat-title">Volunteers</h3>
+                                <p class="stat-desc">Over 3,000 active student volunteers</p>
+                            </div>
+                        </div>
+
+                        <div class="stat-item">
+                            <div class="stat-icon">🤲</div>
+                            <div class="stat-text">
+                                <p class="stat-desc">Founded
+                                    In memory of our colleague Menna, may she rest in peace. Remember her in your prayers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container news-content">
+            <div class="section-header">
+                <h2 class="section-title">Latest News and Activities</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="public/Events/My Book Your Book/cover.jpg" alt="Cover" class="event-cover">
+                    </div>
+                    <div class="news-details">
+                        <div class="news-date">2025 January</div>
+                        <h3 class="news-title">My Book, Your Book</h3>
+                        <p class="news-excerpt">Distribution of school books and supplies to underprivileged families in Al-Marg City.</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="public/Events/Iftar/cover.jpg" alt="cover" class="event-cover">
+                    </div>
+                    <div class="news-details">
+                        <div class="news-date">Ramadan 2024</div>
+                        <h3 class="news-title">Iftar event and visit to an orphanage during Ramadan</h3>
+                        <p class="news-excerpt">Organizing an iftar meal for the homeless and visiting an orphanage in Nasr City during Ramadan.</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="public/Events/Compitition/cover.jpg" alt="cover" class="event-cover">
+                    </div>
+                    <div class="news-details">
+                        <div class="news-date">2024 Summer</div>
+                        <h3 class="news-title">Ather compitition</h3>
+                        <p class="news-excerpt">This large-scale competition involved activities such as distributing food and drinks to the homeless, cleaning streets and vehicles, giving toys to children, and providing assistance to the elderly and people with disabilities. The goal was to leave an "Athar" in every way possible.</p>
+                    </div>
+                </div>
+
+                <div class="extra-news" style="display: none;">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="public/Events/Assembly/cover.jpg" alt="cover" class="event-cover">
+                        </div>
+                        <div class="news-details">
+                            <div class="news-date">2024 Summer</div>
+                            <h3 class="news-title">STEM Obour Assmebly Decoration</h3>
+                            <p class="news-excerpt">Decorating the walls of the assembly of STEM Obour with pharaonic symbols enhances the Egyptian identity among students.</p>
+                        </div>
+                    </div>
+
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="public/Events/cloth/cover.jpg" alt="cover" class="event-cover">
+                        </div>
+                        <div class="news-details">
+                            <div class="news-date">2024 Summer</div>
+                            <h3 class="news-title">Distributing clothing to children and low-income families.</h3>
+                            <p class="news-excerpt">Distributing clothing to children and low-income families in Al-Salam city to promote a sense of equality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-button">
+                <button class="btn-secondary">View All News</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- High Board Section -->
+    <section class="high-board" id="high-board">
+        <div class="container high-board-content">
+            <div class="high-board-header">
+                <h1 class="high-board-title">High Board</h1>
+                <div class="blue-divider"></div>
+            </div>
+
+            <div class="profiles-grid">
+                <div class="profiles-grid">
+                <div class="profile">
+                    <div class="profile-avatar">
+                        <img src="public/Highboard PICS/Sama Hany.jpg" alt="Sama Hany" class="avatar-icon">
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Sama Hany</h3>
+                        <p class="profile-role">President</p>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <div class="profile-avatar">
+                        <img src="public/Highboard PICS/zika.jpg" alt="Ziad Walid" class="avatar-icon">
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Ziad Walid</h3>
+                        <p class="profile-role">Vice President</p>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <div class="profile-avatar">
+                        <img src="public/Highboard PICS/Salma Ashour.jpg" alt="Salma Ashour" class="avatar-icon">
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Salma Ashour</h3>
+                        <p class="profile-role">Strategy development manager</p>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <div class="profile-avatar">
+                        <img src="public/Highboard PICS/Nourien Ibrahim.jpg" alt="Nourien Ibrahim" class="avatar-icon">
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Nourien Ibrahim</h3>
+                        <p class="profile-role">Chief operating officer</p>
+                    </div>
+                </div>
+
+                <div class="profile">
+                        <div class="profile-avatar">
+                            <img src="public/Highboard PICS/Badr Mohamed.jpg" alt="Badr Mohamed" class="avatar-icon">
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">Badr Mohamed</h3>
+                            <p class="profile-role">Chief financial steward</p>
+                        </div>
+                </div>
+            </div>
+
+                <div class="extra-members profiles-grid" style="display: none;">
+                    <div class="profile">
+                            <div class="profile-avatar">
+                                <img src="public/Highboard PICS/Mohamed Abdulkhaliq.jpg" alt="Mohamed Abdulkhaliq" class="avatar-icon">
+                            </div>
+                            <div class="profile-info">
+                                <h3 class="profile-name">Mohamed Abdulkhaliq</h3>
+                                <p class="profile-role">Chief financial steward</p>
+                            </div>
+                        </div>
+                    <div class="profile">
+                        <div class="profile-avatar">
+                            <img src="public/Highboard PICS/Tomas Bishoy.jpg" alt="Thomas Bishoy" class="avatar-icon">
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">Thomas Bishoy</h3>
+                            <p class="profile-role">Chief Partnerships Officer</p>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-avatar">
+                            <img src="public/Highboard PICS/Habiba Roshdy.jpg" alt="Habiba Roshdy" class="avatar-icon">
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">Habiba Roshdy</h3>
+                            <p class="profile-role">Chief Partnerships Officer</p>
+                        </div>
+                    </div>
+                <div class="profile">
+                        <div class="profile-avatar">
+                            <img src="public/Highboard PICS/Bassant Yasser.jpg" alt="Bassant Yasser" class="avatar-icon">
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">Bassant Yasser</h3>
+                            <p class="profile-role">Chief risk & governance officer</p>
+                        </div>
+                    </div>
+                <div class="profile">
+                        <div class="profile-avatar">
+                            <img src="public/Highboard PICS/Jana Mohamed.jpg" alt="Jana Mohamed" class="avatar-icon">
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">Jana Mohamed</h3>
+                            <p class="profile-role">Chief risk & governance officer</p>
+                        </div>
+                    </div>
+                <div class="profile">
+                        <div class="profile-avatar">
+                            <img src="public/Highboard PICS/Moamen Ahmed.jpg" alt="Moamen Ahemd" class="avatar-icon">
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">Moamen Ahmed</h3>
+                            <p class="profile-role">Executive director of human Capital</p>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-avatar">
+                            <img src="public/Highboard PICS/Hanin Hatem.jpg" alt="Hanin Hatem" class="avatar-icon">
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">Hanin Hatem</h3>
+                            <p class="profile-role">Executive director of operations</p>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-avatar">
+                            <img src="public/Highboard PICS/2.jpg" alt="Ahemd Raafat" class="avatar-icon">
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">Ahmed Raafat</h3>
+                            <p class="profile-role">Chief web development</p>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-avatar">
+                            <img src="public/Highboard PICS/zizo.jpg" alt="Abdelaziz Walid" class="avatar-icon">
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">Abdelaziz Walid</h3>
+                            <p class="profile-role">Chief web development</p>
+                        </div>
+                    </div>
+                <div class="profile">
+                        <div class="profile-avatar">
+                            <img src="public/Highboard PICS/Amr Mahrous.jpg" alt="Amr Mahrous" class="avatar-icon">
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">Amr Mahrous</h3>
+                            <p class="profile-role">Head of the Organizing committee</p>
+                        </div>
+                    </div>
+                    <div class="profile">
+                            <div class="profile-avatar">
+                                <img src="public/Highboard PICS/Malak Teby.jpg" alt="Malak Teby" class="avatar-icon">
+                            </div>
+                            <div class="profile-info">
+                                <h3 class="profile-name">Malak Teby</h3>
+                                <p class="profile-role">Head of Social Midea and Digital Marketing</p>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+            <div class="high-board-button">
+                <button class="btn-secondary" id="viewAllMembers">See All High Board Members</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container contact-content">
+            <div class="section-header">
+                <h1 class="section-title">Contact Us</h1>
+                <div class="divider"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2 class="text-title">Get in Touch</h2>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Enter your full name">
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="Enter your email address">
+                        </div><br><br>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-input" placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+
+                        <br><br><button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h2 class="text-title">Connect With Us</h2>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="icon fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Email Us</h3>
+                            <div class="info-details">
+                                <p class="info-detail">info@ather.org</p>
+                                <p class="info-detail">support@ather.org</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h3 class="social-title">Follow Us</h3>
+                        <div class="social-buttons">
+                            <button class="social-button">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button class="social-button">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                            <button class="social-button">
+                                <i class="fab fa-linkedin-in"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <img src="public/margin.png" alt="Ather Logo" class="footer-logo-img">
+                    <div class="footer-logo-text">
+                        <h2 class="footer-logo-title">Ather Initiative</h2>
+                        <p class="footer-logo-desc">Empowering youth through volunteerism</p>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <button class="footer-social-button">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="footer-social-button">
+                        <i class="fab fa-instagram"></i>
+                    </button>
+                    <button class="footer-social-button">
+                        <i class="fab fa-linkedin-in"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-copyright">
+                <p>© 2025 Ather Charity Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
