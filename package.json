@@ -4,6 +4,10 @@
   "description": "Athar charity organization website",
   "scripts": {
     "dev": "python -m http.server 3000",
-    "start": "python -m http.server 3000"
+    "start": "python -m http.server 3000",
+    "deploy": "gh-pages -d timer"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
