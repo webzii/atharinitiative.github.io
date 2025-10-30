@@ -19,6 +19,62 @@ body {
   text-align: center;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: rgba(17, 24, 39, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(31, 41, 55, 0.5);
+  transition: all 0.3s ease;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.logo-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-img {
+  transform: scale(1.1);
+}
+
+.logo-a {
+  text-decoration: none;
+  padding-left: 3rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.logo:hover .logo-text {
+  color: #60a5fa;
+}
+
 h1 {
   font-size: 3.5rem;
   color: #D4edfc;
@@ -34,6 +90,17 @@ h1 {
 </style>
 </head>
 <body>
+
+  <header id="header">
+    <div class="container">
+        <div class="header-content">
+            <a href="index.html" class="logo-a"><div class="logo" >
+                <img src="../public/logo-dark.png"  alt="Ather Logo" class="logo-img">
+                <div class="logo-text">Ather Initiative</div>
+            </div></a>
+        </div>
+    </div>
+</header>
 
 <div>
   <h1>Coming soon..</h1>
