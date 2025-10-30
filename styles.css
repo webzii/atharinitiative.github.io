@@ -617,6 +617,28 @@ input:checked + .slider:before {
   justify-content: center;
 }
 
+/* .pdf-button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-pdf {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0A1A3F;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pdf:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}  */
+
+
 /* High Board Section */
 
 .high-board {
@@ -1713,3 +1735,20 @@ body.light-mode .social-title {
   background-color: #095581;
   color: #E5E7EB;
 }
+
+/* body.light-mode .btn-pdf {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1f2937;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+body.light-mode .btn-pdf:hover {
+  background-color: #ecf7fe;
+  color: #1f2937;
+  text-decoration: underline;
+}  */

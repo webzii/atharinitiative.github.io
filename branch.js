@@ -1,23 +1,32 @@
 // Dark/Light Mode Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggle = document.getElementById('darkModeToggle');
-    
-    if (darkModeToggle) {
+    const logo = document.querySelector('.logo-img'); 
+
+    if (darkModeToggle && logo) {
         // Load saved theme from localStorage
         const savedTheme = localStorage.getItem('theme');
+
         if (savedTheme === 'light') {
             document.body.classList.add('light-mode');
             darkModeToggle.checked = true;
+            logo.src = 'public/logo-light.png'; // Light mode logo
+        } else {
+            document.body.classList.remove('light-mode');
+            darkModeToggle.checked = false;
+            logo.src = 'public/logo-dark.png'; // Dark mode logo
         }
-        
+
         // Toggle theme on switch change
         darkModeToggle.addEventListener('change', function() {
             if (this.checked) {
                 document.body.classList.add('light-mode');
                 localStorage.setItem('theme', 'light');
+                logo.src = 'public/logo-light.png'; // Switch to light logo
             } else {
                 document.body.classList.remove('light-mode');
                 localStorage.setItem('theme', 'dark');
+                logo.src = 'public/logo-dark.png'; // Switch to dark logo
             }
         });
     }

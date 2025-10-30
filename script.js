@@ -1,23 +1,32 @@
 // Dark/Light Mode Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggle = document.getElementById('darkModeToggle');
-    
-    if (darkModeToggle) {
+    const logo = document.querySelector('.logo-img'); 
+
+    if (darkModeToggle && logo) {
         // Load saved theme from localStorage
         const savedTheme = localStorage.getItem('theme');
+
         if (savedTheme === 'light') {
             document.body.classList.add('light-mode');
             darkModeToggle.checked = true;
+            logo.src = 'public/logo-light.png'; // Light mode logo
+        } else {
+            document.body.classList.remove('light-mode');
+            darkModeToggle.checked = false;
+            logo.src = 'public/logo-dark.png'; // Dark mode logo
         }
-        
+
         // Toggle theme on switch change
         darkModeToggle.addEventListener('change', function() {
             if (this.checked) {
                 document.body.classList.add('light-mode');
                 localStorage.setItem('theme', 'light');
+                logo.src = 'public/logo-light.png'; // Switch to light logo
             } else {
                 document.body.classList.remove('light-mode');
                 localStorage.setItem('theme', 'dark');
+                logo.src = 'public/logo-dark.png'; // Switch to dark logo
             }
         });
     }
@@ -54,62 +63,35 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 });
 
 // View All news Button
-    document.addEventListener('DOMContentLoaded', function() {
-        const viewAllButton = document.querySelector('.news-button .btn-secondary');
-        const extraNews = document.querySelector('.extra-news');
-        let expanded = false;
-        
-        viewAllButton.addEventListener('click', function() {
-            if (!expanded) {
-                extraNews.style.display = 'grid';
-                viewAllButton.textContent = 'Show Less News';
-                expanded = true;
-                
-                // Scroll to the new content
-                extraNews.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            } else {
-                extraNews.style.display = 'none';
-                viewAllButton.textContent = 'View All News';
-                expanded = false;
-            }
+document.addEventListener('DOMContentLoaded', function() {
+    // Select ALL secondary buttons in sections
+    const buttons = document.querySelectorAll('section .btn-secondary');
+
+    buttons.forEach(button => {
+        const section = button.closest('section');
+
+        // Check for either .extra-members or .extra-news inside that section
+        const extraContent =
+            section.querySelector('.extra-members') ||
+            section.querySelector('.extra-news');
+
+        const pdfButton = section.querySelector('.pdf-button-container');
+
+        if (!extraContent) return;
+
+        button.addEventListener('click', () => {
+            const isHidden = extraContent.style.display === 'none' || extraContent.style.display === '';
+
+            // Toggle visibility
+            extraContent.style.display = isHidden ? 'grid' : 'none';
+            if (pdfButton) pdfButton.style.display = isHidden ? 'block' : 'none';
+
+            // Toggle text
+            button.textContent = isHidden
+                ? (button.textContent.includes('News') ? 'Show Less News' : 'Show Less')
+                : (button.textContent.includes('News') ? 'View All News' : 'See All');
         });
     });
-
-    // View All News functionality
-function initViewAllNews() {
-    const viewAllButton = document.querySelector('.news-button .btn-secondary');
-    const extraNews = document.querySelector('.extra-news');
-    let expanded = false;
-
-    if (viewAllButton && extraNews) {
-        viewAllButton.addEventListener('click', function() {
-            if (!expanded) {
-                extraNews.style.display = 'grid';
-                viewAllButton.textContent = 'Show Less';
-                expanded = true;
-
-                // Scroll to the new content
-                extraNews.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            } else {
-                extraNews.style.display = 'none';
-                viewAllButton.textContent = 'View All News';
-                expanded = false;
-            }
-        });
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    const viewAllBtn = document.getElementById('viewAllMembers');
-    const extraMembers = document.querySelector('.extra-members');
-    
-    if (viewAllBtn && extraMembers) {
-        viewAllBtn.addEventListener('click', function() {
-            const isHidden = extraMembers.style.display === 'none';
-            extraMembers.style.display = isHidden ? 'grid' : 'none';
-            viewAllBtn.textContent = isHidden ? 'Show Less' : 'See All High Board Members';
-        });
-    }
 });
 
 // header dropdown
