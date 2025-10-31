@@ -1,0 +1,323 @@
+/* values */
+
+.values-list {
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: flex;
+}
+
+.value-item {
+    align-self: stretch;
+    padding: 12px 14px;
+    background: linear-gradient(180deg, rgba(31, 41, 55, 0.60) 0%, rgba(31, 41, 55, 0.40) 100%);
+    box-shadow: 0px 6px 20px rgba(10, 30, 45, 0.06);
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    transition: 0.2s;
+}
+
+.value-item:hover {
+    transform: scale(1.0625);
+    background: linear-gradient(180deg, rgba(81, 91, 105, 0.60) 0%, rgba(81, 91, 105, 0.40) 100%);
+}
+
+.value-text {
+    align-self: stretch;
+}
+
+.value-name {
+    color: #D4EDFC;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.value-description {
+    color: #D4EDFC;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/* committees */
+
+.committees-grid {
+    align-self: stretch;
+    height: 390px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.committee-card {
+    width: 261.50px;
+    min-height: 186px;
+    padding: 18px;
+    background: linear-gradient(180deg, #095581 0%, #095581 100%);
+    box-shadow: 0px 6px 20px rgba(10, 30, 45, 0.06);
+    border-radius: 14px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6.84px;
+    display: inline-flex;
+    transition: 0.2s;
+}
+
+.committee-card:hover {
+    transform: scale(1.0625);
+    background: linear-gradient(180deg, #003c68 0%, #003c68 100%);
+}
+
+.committee-header {
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    display: inline-flex;
+}
+
+.committee-icon {
+    width: 44px;
+    height: 44px;
+    padding: 11.50px 0;
+    background: linear-gradient(135deg, #246AA0 0%, #8CC6EA 100%);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #7ECAF6;
+    font-size: 18px;
+}
+
+.committee-name {
+    color: #D4EDFC;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.committee-description {
+    align-self: stretch;
+    color: #D4EDFC;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 18.85px;
+}
+
+/* Operations and report */
+
+.operations-grid {
+    align-self: stretch;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+    display: inline-flex;
+}
+
+.operation-card {
+    flex: 1 1 0;
+    padding: 18px;
+    background: linear-gradient(0deg, rgba(31, 41, 55, 0.40) 0%, rgba(31, 41, 55, 0.40) 100%), rgba(31, 41, 55, 0.60);
+    box-shadow: 0px 6px 20px rgba(10, 30, 45, 0.06);
+    border-radius: 12px;
+    outline-offset: -1px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: inline-flex;
+    transition: 0.2s;
+}
+
+.operation-card:hover {
+    transform: scale(1.0625);
+    background: linear-gradient(0deg, rgba(81, 91, 105, 0.40) 0%, rgba(81, 91, 105, 0.40) 100%), rgba(81, 91, 105, 0.60);
+}
+
+.operation-card.dark {
+    background: #1F2937;
+    outline: none;
+}
+
+.operation-card-title {
+    align-self: stretch;
+    color: #D4EDFC;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.operation-card-description {
+    align-self: stretch;
+    color: #D4EDFC;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.report-list {
+    align-self: stretch;
+    padding-left: 18px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.report-item {
+    height: 15px;
+    position: relative;
+    color: #D4EDFC;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+    transition: 0.2s;
+}
+
+                                                    /* Light Mode */
+
+/* values */
+
+body.light-mode .value-item {
+    align-self: stretch;
+    padding: 12px 14px;
+    background: #fff;
+    box-shadow: 0px 6px 20px rgba(10, 30, 45, 0.06);
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    transition: 0.2s;
+}
+
+body.light-mode .value-item:hover {
+    transform: scale(1.0625);
+    background: linear-gradient(180deg, rgba(205, 205, 205, 0.60) 0%, rgba(205, 205, 205, 0.40) 100%);
+}
+
+body.light-mode .value-name {
+    color: #031C2B;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+body.light-mode .value-description {
+    color: #031C2B;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/* committees */
+
+body.light-mode .committee-card {
+    width: 261.50px;
+    min-height: 186px;
+    padding: 18px;
+    background: linear-gradient(180deg, #fff 0%, #fff 100%);
+    box-shadow: 0px 6px 20px rgba(10, 30, 45, 0.06);
+    border-radius: 14px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6.84px;
+    display: inline-flex;
+}
+
+body.light-mode .committee-card:hover {
+    transform: scale(1.0625);
+    background: linear-gradient(180deg, #e6e6e6 0%, #e6e6e6 100%);
+}
+
+body.light-mode .committee-icon {
+    width: 44px;
+    height: 44px;
+    padding: 11.50px 0;
+    background: linear-gradient(135deg, #246AA0 0%, #8CC6EA 100%);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #7ECAF6;
+    font-size: 18px;
+}
+
+body.light-mode .committee-name {
+    color: #0B2A3A;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+body.light-mode .committee-description {
+    align-self: stretch;
+    color: #031C2B;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 18.85px;
+}
+
+/* Operations and report */
+
+body.light-mode .operation-card {
+    flex: 1 1 0;
+    padding: 18px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.40) 100%), rgba(255, 255, 255, 0.60);
+    box-shadow: 0px 6px 20px rgba(10, 30, 45, 0.06);
+    border-radius: 12px;
+    outline-offset: -1px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: inline-flex;
+}
+
+body.light-mode .operation-card:hover {
+    transform: scale(1.0625);
+    background: linear-gradient(0deg, rgba(230, 230, 230, 0.40) 0%, rgba(230, 230, 230, 0.40) 100%), rgba(230, 230, 230, 0.60);
+}
+
+body.light-mode .operation-card.dark {
+    background: #fff;
+    outline: none;
+}
+
+body.light-mode .operation-card-title {
+    align-self: stretch;
+    color: #031C2B;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+body.light-mode .operation-card-description {
+    align-self: stretch;
+    color: #031C2B;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+body.light-mode .report-item {
+    height: 15px;
+    position: relative;
+    color: #031C2B;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
