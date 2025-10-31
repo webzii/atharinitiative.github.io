@@ -786,6 +786,47 @@ input:checked + .slider:before {
   color: #bfdbfe;
 }
 
+/* Success Section */
+
+.success-story {
+  width: 100%;
+  padding: 6rem 1.5rem;
+  background-color: #111827;
+  display: flex;
+  justify-content: center;
+}
+
+.success-story-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.success-story-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d4edfc;
+  margin: 0;
+  font-weight: 500;
+}
+
+.athar-bold {
+  color: #7ecaf6;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .success-story {
+      padding: 40px 0;
+  }
+  
+  .success-story-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      padding: 0 20px;
+  }
+}
+
 /* Contact Section */
 
 .contact {
@@ -1616,6 +1657,34 @@ body.light-mode .profile-role {
   font-size: 1rem;
   font-weight: 500;
   color: #031c2b;
+}
+
+/* Success Section */
+
+body.light-mode .success-story {
+  width: 100%;
+  padding: 6rem 1.5rem;
+  background-color: #ECF1FE;
+  display: flex;
+  justify-content: center;
+}
+
+body.light-mode .success-story-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body.light-mode .success-story-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #031c2b;
+  margin: 0;
+  font-weight: 500;
+}
+
+body.light-mode .athar-bold {
+  color: #095581;
 }
 
                                                 /* Contact Section */
