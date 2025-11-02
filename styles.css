@@ -111,6 +111,14 @@ nav {
   width: 100%;
 }
 
+.current-nav-link {
+  position: relative;
+  padding: 0.5rem 1rem;
+  color: #7ecaf6;
+  text-decoration: none;
+  transition: width 0.3s ease;
+}
+
 .dropdowncontent {
   display: none;
   position: absolute;
@@ -1277,6 +1285,14 @@ body.light-mode .nav-link::after {
 
 body.light-mode .nav-link:hover::after {
   width: 100%;
+}
+
+body.light-mode .current-nav-link {
+  position: relative;
+  padding: 0.5rem 1rem;
+  color: #095581;
+  text-decoration: none;
+  transition: width 0.3s ease;
 }
 
 body.light-mode .dropdowncontent {
