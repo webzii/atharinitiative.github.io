@@ -293,7 +293,7 @@ body.light-mode .application-button {
     height: 6rem;
     background: #5641ff;
     border-radius: 100px;
-    margin: 5rem;
+    margin: 2.5rem;
     transition: 0.2s;
 }
 
@@ -316,3 +316,170 @@ body.light-mode .application-note {
     line-height: 40px;
     word-wrap: break-word;
 }
+/* Responsive Settings */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+    .hero-join {
+      padding: 4rem 1.5rem;
+    }
+
+    body.light-mode .hero-join {
+        padding: 4rem 1.5rem;
+      }
+  
+    .gallery-container {
+      gap: 6px;
+      padding: 0.5rem;
+    }
+
+    body.light-mode .gallery-container {
+        gap: 6px;
+        padding: 0.5rem;
+      }
+  
+    .application-button {
+      margin: 2.5rem 0;
+    }
+  
+    .application-note {
+      width: 90%;
+      line-height: 32px;
+      font-size: 17px;
+    }
+  }
+  
+  /* Small Tablets (≤900px) */
+  @media (max-width: 900px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .gallery-item {
+      flex: 1 1 calc(33.333% - 8px);
+      max-width: calc(33.333% - 8px);
+    }
+  }
+  
+  /* Large Phones (≤768px) */
+  @media (max-width: 768px) {
+    .gallery-item {
+      flex: 1 1 calc(50% - 8px);
+      max-width: calc(50% - 8px);
+    }
+  
+    .application-button {
+      width: 80%;
+      height: 5.5rem;
+    }
+  
+    .application-note {
+      width: 95%;
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+  
+  /* Phones (≤600px) */
+  @media (max-width: 600px) {
+    .hero-join {
+      padding: 3rem 1rem;
+    }
+
+    body.light-mode .hero-join {
+        padding: 3rem 1rem;
+      }
+  
+    .hero-title {
+      font-size: 1.8rem;
+    }
+
+    body.light-mode .hero-title {
+        font-size: 1.8rem;
+      }
+  
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+
+    body.light-mode .hero-subtitle {
+        font-size: 1rem;
+      }
+  
+    .gallery-container {
+      gap: 5px;
+    }
+
+    body.light-mode .gallery-container {
+      gap: 5px;
+    }
+  
+    .gallery-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+
+    body.light-mode .gallery-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+  
+    .application-button {
+      width: 90%;
+      height: 5rem;
+      margin: 2rem 0;
+    }
+
+    body.light-mode .application-button {
+      width: 90%;
+      height: 5rem;
+      margin: 2rem 0;
+    }
+  
+    .application-note {
+      width: 90%;
+      font-size: 15px;
+      line-height: 26px;
+    }
+
+    body.light-mode .application-note {
+      width: 90%;
+      font-size: 15px;
+      line-height: 26px;
+      padding-top: 1rem;
+    }
+  }
+  
+  /* Small Phones (≤450px) */
+  @media (max-width: 450px) {
+    .hero-title {
+      font-size: 1.6rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 0.95rem;
+    }
+  
+    .gallery-container {
+      gap: 4px;
+    }
+  
+    .application-button {
+      width: 95%;
+      height: 4.5rem;
+    }
+  
+    .appBtnTxt {
+      padding-top: 1.8rem;
+    }
+  
+    .application-note {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  
