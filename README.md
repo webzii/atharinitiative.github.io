@@ -1,68 +1,96 @@
 # Ather Initiative Website
 
-A modern, responsive, and accessible website for **Ather Initiative**, built concerning performance, maintainability, and user experience.  
-This project serves as the **official digital front** of the organization — presenting its mission and social impact engagingly and professionally.
+[![Website](https://img.shields.io/badge/Live_Site-Visit-blue?style=for-the-badge&logo=google-chrome)](https://www.atherinitiative.org)
+[![GitHub Repo](https://img.shields.io/badge/Source_Code-GitHub-black?style=for-the-badge&logo=github)](https://github.com/webzii/atharinitiative.github.io)
+[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge)]()
 
 ---
 
-## Overview
+## 🌍 About Ather Initiative
 
-The **Ather Initiative Website** aims to provide a clean, intuitive, and responsive web platform that represents the vision and work of the Ather Initiative.  
-It is designed to communicate the organization’s activities, goals, and values to a broad audience — including potential volunteers and donors.
+**Ather** is a charitable initiative whose mission is to promote the concept of **volunteerism**, emphasizing its importance in strengthening individuals and communities.  
+It focuses on encouraging **student engagement in schools**, nurturing leadership, empathy, and civic responsibility.
 
-The project emphasizes:
-- Modern web development principles and accessibility.
-- Structured and maintainable code.
-- Strong focus on performance, responsiveness, and scalability.
-
----
-
-## 🚀 Key Highlights
-
-Although still under development, the website already demonstrates:
-- **Responsive and adaptive design** for desktop, tablet, and mobile screens.  
-- **User-focused navigation** to highlight events, initiatives, and social impact.  
-- **Optimized page layouts** for clarity and readability.  
-- **Modular structure** supporting future backend integration.  
-- **Scalable foundation** for new features such as donations, events, and volunteer signups.
+### 🎯 Vision
+Many people have the desire to do good but often need encouragement and reminders.  
+Through **Ather Clubs**—established in schools and universities—the Initiative spreads the culture of volunteering.  
+Each club identifies local needs and continuously seeks ways to support and uplift its community.
 
 ---
 
-## 🧭 Project Structure
+## 🧭 Purpose of the Website
 
-The website follows a clean and logical folder structure for scalability and collaboration.
-
-```bash
-Ather_Initiative_Website/
-│
-├── Public/                # Images, icons, and static media
-├── Files                  # HTML, CSS, and JS files
-└── README.md              # Project documentation (this file)
-```
+This website serves as the official digital presence of **Ather Initiative**, created to:
+- Present the organization’s **mission, structure, and activities**.  
+- **Showcase committees** and their ongoing efforts.  
+- Display **statistics and milestones** of impact.  
+- Provide an **online application system** for new members.  
+- Highlight the **branches** of Ather across regions.
 
 ---
 
-## Front-End Technologies
+## 🗂️ Website Structure
 
-| Technology        | Purpose                             |
-|-------------------|-------------------------------------|
-| HTML5             | Semantic and accessible structure   |
-| CSS3              | Custom responsive design            |
-| JavaScript (ES6+) | Interactivity and user logic        |
-
----
-
-## Contributors
-
-| Name              | Gitub                                     |
-|-------------------|-------------------------------------------|
-| Ahmed Awad        | [@webzii](https://github.com/webzii/)     |
-| Abdelaziz Waleed  | [@zezokamd](https://github.com/zezokamd/) |
+| Page | Description |
+|------|--------------|
+| **Home** | Introduction to Ather and its mission. |
+| **Committees** | Overview of the main committees and their functions. |
+| **Stats** | Data-driven insights into Ather’s work. |
+| **Application Page** | Form for users to apply to join. |
+| **Branches Pages** | Dedicated pages for three regional branches. |
 
 ---
 
-## Contact
+## 💻 Tech Stack
 
-**Maintainer**: *Ahmed Awad*
+| Category | Tools |
+|-----------|--------|
+| **Frontend** | HTML, CSS, JavaScript |
+| **Design** | Figma (UI/UX prototypes) |
+| **Hosting** | GitHub Pages (Static Deployment) |
 
-**Email**: ahmedwebzii@gmail.com
+This is a **static website**, requiring no additional dependencies or build process.
+
+---
+
+## 👥 Development Team
+
+Developed and maintained by the **Ather Web Development Team**  
+with contributions from:
+
+- **Ahmed Awad** – Chief Web Development  
+- **Abdelaziz Waleed** – Chief Web Development  
+
+> Designed with dedication and passion to empower youth volunteers.
+
+---
+
+## 📬 Contact
+
+### 📧 Emails
+- [web.support@atherinitiative.org](mailto:web.support@atherinitiative.org) — Web Support  
+- [user.support@atherinitiative.org](mailto:user.support@atherinitiative.org) — User Support  
+- [ahmedwebzii@gmail.com](mailto:ahmedwebzii@gmail.com) — Ahmed Awad (Contributor)
+
+### 🌐 Social Media
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=61561240924771#)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/ather_egypt)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/athar-egypt/posts/?feedView=all)
+[![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@athar_egypt?_t=ZS-8yXqgqizNmq)
+
+---
+
+## ⚖️ License
+
+© **Ather Initiative** — All Rights Reserved.
+
+---
+
+## 💖 Acknowledgments
+
+A heartfelt thanks to all **Ather volunteers and contributors** for their dedication to creating a lasting positive impact in their communities.
+
+---
+
+> _“Volunteering is not just an act of kindness — it’s the foundation of a better future.”_  
+> — **Ather Initiative**
